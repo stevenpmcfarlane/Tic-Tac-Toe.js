@@ -13,7 +13,12 @@ const Gameboard = () => {
         <div className="gameboard-row">
           {row.map((col, colIndex) => (
             <div className="gameboard-col">
-              <GameTile row={rowIndex} col={colIndex} value={col} />
+              <GameTile
+                key={"" + rowIndex + colIndex}
+                row={rowIndex}
+                col={colIndex}
+                value={col}
+              />
             </div>
           ))}
         </div>
