@@ -8,7 +8,7 @@ const Gameboard = () => {
   const board = useSelector((state) => state.board);
 
   return (
-    <>
+    <div className="gameboard-container">
       {board.map((row, rowIndex) => (
         <div className="gameboard-row">
           {row.map((col, colIndex) => (
@@ -23,7 +23,7 @@ const Gameboard = () => {
           ))}
         </div>
       ))}
-    </>
+    </div>
   );
 };
 
